@@ -1,7 +1,20 @@
 (()=>{
-  let userId: string | number
+  type UserId = string | number
 
-  function greetin(userId: string | number){
-    if(typeof)
+  let userId: UserId
+
+  type Sizes = 'S' | 'M' | 'L';
+  let shirtSize: Sizes;
+  shirtSize='S'
+  shirtSize='M'
+  shirtSize='L'
+
+  function greetin(userId: UserId , size: Sizes){
+    if(typeof userId ==='string'){
+      console.log(`string ${userId.toLocaleLowerCase()}`)
+    }
   }
+
+  greetin('L', 'M')
+
 })()
