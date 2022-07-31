@@ -1,7 +1,8 @@
 (()=>{
 
+  type Product = {email:string, password:string}
 
-  const login = (data: {email:string, password:string})=>{
+  const login = (data: Product )=>{
     console.log(data.email, data.password)
   }
 
